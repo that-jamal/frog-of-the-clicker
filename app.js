@@ -1,6 +1,10 @@
 let score = 0;
 const showScore = document.getElementById("score");
 
+function countCheat() {
+    score = 691;
+    showScore.textContent = score
+}
 
 function countScore() {
     score++
@@ -49,13 +53,24 @@ function countScore() {
         document.body.style.backgroundImage = "url('b10.webp')";
 
     }
-    if (score >= 122) {
+    if (score >= 140) {
+        document.body.style.backgroundImage = "url('https://www.thoughtco.com/thmb/NY5k_3slMRttvtS7mA0SXm2WW9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/smallerAndromeda-56a8ccf15f9b58b7d0f544fa.jpg')";
+
+    }
+    if (score >= 240) {
+        document.body.style.backgroundImage = "url('https://images.ctfassets.net/cnu0m8re1exe/1Gq6ruOWkDmcEq4nF9YmfC/7118566d623072231867ee9506c6b1fd/ASY-UG0319_06.png')";
+
+    }
+    if (score >= 700) {
         document.body.style.backgroundImage = "url('black.jpg')";
 
     }
-    if (score >= 124) {
+
+
+
+    if (score >= 1000) {
         setTimeout("location.reload(true);", 1500)
-        alert("bro did it")
+        alert("nah bro is done now okey")
 
     }
 }
