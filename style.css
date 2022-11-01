@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    transition: all 0.5s ease;
+    background-image: url("black.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+
+    background-size: 100%;
+    align-items: center;
+}
+
+img:hover {
+    width: 170px;
+    transition: all 0.3s ease;
+}
+
+img:active {
+    transition: all 0.1s ease;
+    transform: translateY(10px);
+}
+
+
+i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    transform: translateY(100%);
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+h4 {
+    font-family: sans-serif;
+}
